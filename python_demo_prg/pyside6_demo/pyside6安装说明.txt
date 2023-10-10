@@ -1,0 +1,15 @@
+python安装pyside6使用国内镜像源
+python -m pip --default-timeout=300 install pyside6 -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com/pypi/simple/
+
+参考链接：
+https://www.cnblogs.com/HeroZhang/p/17546945.html
+https://www.cnblogs.com/songzhixue/p/11296720.html
+
+系统安装了pyside6 但是pycharm是不能用，原因如下：
+venv文件夹
+虚拟环境的作用就是可以很好的跟其他的项目进行隔离，如果没有虚拟环境，而是在一个全局的虚拟环境中，
+所有的项目所需要的包都会在同一个地方，就会显得特别的乱，而虚拟环境的作用就是将每个项目所需要的包进行隔离开，
+在本项目中安装的包，不会在其他的项目中使用并出现。
+所以可以在 pycharm中的终端重新安装一遍 pyside6，然后pyside6就可以用了。
+
+https://doc.qt.io/qtforpython-6/quickstart.html
