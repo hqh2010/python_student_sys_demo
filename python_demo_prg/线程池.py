@@ -28,6 +28,7 @@ def doTask(page):
 #             print(f"main: {data}")
 
 def run_task_callback(i):
+    # https://blog.csdn.net/weixin_39916966/article/details/127387937
     # os.system() 默认是阻塞的，subprocess.Popen默认不阻塞
     # proc = subprocess.Popen(cmd_str, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     # proc.wait()
